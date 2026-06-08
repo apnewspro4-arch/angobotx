@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AngoBot X PRO</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ANGOBOT X</h1>
+
+<div class="top">
+
+<div class="box">
+<h2>Saldo</h2>
+<p id="balance">$0.00</p>
+</div>
+
+<div class="box">
+<h2>Lucro</h2>
+<p id="profit">$0.00</p>
+</div>
+
+</div>
+
+<div class="digitBox">
+
+<h2>Último Dígito</h2>
+
+<div id="digit">0</div>
+
+</div>
+
+<div class="chart">
+
+<div class="bar" id="bar0"><span>0</span></div>
+<div class="bar" id="bar1"><span>1</span></div>
+<div class="bar" id="bar2"><span>2</span></div>
+<div class="bar" id="bar3"><span>3</span></div>
+<div class="bar" id="bar4"><span>4</span></div>
+<div class="bar" id="bar5"><span>5</span></div>
+<div class="bar" id="bar6"><span>6</span></div>
+<div class="bar" id="bar7"><span>7</span></div>
+<div class="bar" id="bar8"><span>8</span></div>
+<div class="bar" id="bar9"><span>9</span></div>
+
+</div>
+
+<div class="controls">
+
+<input type="number" id="stake" value="1">
+
+<select id="market">
+
+<option value="R_100">Volatility 100</option>
+
+<option value="R_50">Volatility 50</option>
+
+<option value="R_25">Volatility 25</option>
+
+</select>
+
+<button id="start">INICIAR BOT</button>
+
+<button id="stop">PARAR BOT</button>
+
+</div>
+
+<div class="logs" id="logs"></div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="strategy.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
